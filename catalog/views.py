@@ -119,6 +119,7 @@ def renew_book_librarian(request, pk):
 
     return render(request, 'catalog/book_renew_librarian.html', context)
 
+#Creating views for Author Creation, Updation and Deletion
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 
@@ -137,4 +138,20 @@ class AuthorDelete(LoginRequiredMixin, DeleteView):
     permission_required = 'catalog.can_mark_returned'
     model = Author
     success_url = reverse_lazy('authors')
+
+#Same views now for Book Creation, Updation and Deletion
+class BookCreate(LoginRequiredMixin, CreateView):
+    model = Book
+    fields = '__all__'
+    permission_required = 'catalog.can_mark_returned'
+
+class BookUpdate(LoginRequiredMixin, UpdateView):
+    model = Book
+    fields = '__all__'
+    permission_required = 'catalog.can_mark_returned'
+
+class BookDelete(LoginRequiredMixin, DeleteView):
+    model = Book
+    permission_required = 'catalog.can_mark_returned'
+    success_url = reverse_lazy('books')
     

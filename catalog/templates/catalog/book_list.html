@@ -2,11 +2,16 @@
 
 {% block content %}
 <h1>Book List</h1>
+<p><a href="{% url 'book_create' %}">Create a Book</a></p>
 {% if book_list %}
 <ul>
     {% for book in book_list %}
     <li>
         <a href="{{ book.get_absolute_url }}">{{ book.title }}</a>({{ book.author }})
+        {% if user.is_staff %}--> {% if perms.catalog.can_mark_returned %}- 
+        <a href="{% url 'book_delete' book.id %}">Delete</a>,
+        <a href="{% url 'book_update' book.id %}">Update</a>
+        {% endif %} {% endif %}
     </li>
     {% endfor %}
 </ul>
