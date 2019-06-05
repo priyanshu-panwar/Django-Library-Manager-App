@@ -1,0 +1,23 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<h1>Author List</h1>
+
+<p class="text-muted"><a href="{% url 'author_create' %}">Add an Author</a></p>
+
+{% if author_list %}
+<ul>
+    {% for author in author_list %}
+    <li>
+        <a href="{{ author.get_absolute_url }}">{{ author.last_name }}, {{ author.first_name }} ({{ author.date_of_birth }} - {{ author.date_of_death }})</a> 
+        {% if user.is_staff %}--> {% if perms.catalog.can_mark_returned %}- 
+        <a href="{% url 'author_delete' author.id %}">Delete</a>,
+        <a href="{% url 'author_update' author.id %}">Update</a>
+        {% endif %} {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>There are no authors in the library</p>
+{% endif %}
+{% endblock %}
