@@ -7,4 +7,4 @@ This App is made to manage the Library. It has the following features so far:
   - Library Members: They can view all the books, authors, copies total and available.
 ### Screenshots:
 * Home Page:
-![Home Page](https://github.com/priyanshu-panwar/Django-Library-Manager-App/tree/master/Screenshots)
+![Home Page](https://Django-Library-Manager-App.github.com/Screenshots/Index.png)
