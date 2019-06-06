@@ -39,7 +39,6 @@ This App is made to manage the Library. It has the following features so far:
 
 ##### This is the login page for users to see their borrowed book with due date.
 ![Login](https://user-images.githubusercontent.com/51286676/58956270-8ca88800-87bb-11e9-86c2-de3dbad154b8.PNG)
-82c80-87bb-11e9-885d-ca15a8c3f347.PNG)
 
 ##### A user can check his borrowed books. Admin user or Staff members can view borrowers of all books.
 ![All_Borrowed_root](https://user-images.githubusercontent.com/51286676/58956316-a2b64880-87bb-11e9-88ea-007f92b47c86.PNG)
@@ -48,3 +47,4 @@ This App is made to manage the Library. It has the following features so far:
 - Search bar to search for a book or author on the Home Page.
 - To Show the Borrow History of a book.
 - Users can add their review and rating for a book.
+- New books added to the Library will be shown on Home Page.
