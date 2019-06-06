@@ -35,7 +35,7 @@ This App is made to manage the Library. It has the following features so far:
 ![All_Authors](https://user-images.githubusercontent.com/51286676/58956230-78648b00-87bb-11e9-8b2b-d8a219b8721f.PNG)
 
 ##### User can view all the books by the author available in the library.
-![Author_Detail](https://user-images.githubusercontent.com/51286676/58956286-946\
+![Author_Detail](https://user-images.githubusercontent.com/51286676/59000094-93b8b000-8826-11e9-9c59-52c91b21c4b4.PNG)
 
 ##### This is the login page for users to see their borrowed book with due date.
 ![Login](https://user-images.githubusercontent.com/51286676/58956270-8ca88800-87bb-11e9-86c2-de3dbad154b8.PNG)
